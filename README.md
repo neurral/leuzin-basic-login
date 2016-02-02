@@ -1,3 +1,5 @@
 # leuzin
 
-a [Sails](http://sailsjs.org) application
+This is an example a [Sails](http://sailsjs.org) application.
+
+

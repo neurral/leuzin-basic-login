@@ -2,12 +2,12 @@ module.exports.routes = {
 
   // HTML Views
   '/': { view: 'homepage' },
-  'get /login': { view: 'user/login' },
-  'get /signup': { view: 'user/signup' },
+  'GET /login': { view: 'user/login' },
+  'GET /signup': { view: 'user/signup' },
   '/welcome': { view: 'user/welcome' },
 
   // Endpoints
-  'post /login': 'UserController.login',
-  'post /signup': 'UserController.signup',
+  'POST /login': 'UserController.login',
+  'POST /signup': 'UserController.signup',
   '/logout': 'UserController.logout',
 };

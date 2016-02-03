@@ -1,17 +1,23 @@
+<% include ../layout/head %>
+
 <h1>Signup</h1>
 <form action="/signup" method="post">
 
-  <label for="name">What's your name?</label>
+  <label for="name">Your name: </label>
   <input name="name" type="text"/>
   <br/>
 
-  <label for="email">What's your email?</label>
+  <label for="email">Your email: </label>
   <input name="email" type="text"/>
   <br/>
 
-  <label for="password">Choose a Password</label>
+  <label for="password">Your password: </label>
   <input name="password" type="password"/>
   <br/>
 
-  <input type="submit"/>
+  <input type="submit" value="Sign up" />
 </form>
+
+    <span>Already a user? </span> <a href="/login">Log in</a>
+
+<% include ../layout/footer %>

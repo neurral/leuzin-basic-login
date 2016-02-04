@@ -1,0 +1,23 @@
+{
+  "name": "leuzin",
+  "description": "a basic Sails application",
+  "main": "app.js",
+  "authors": [
+    "john20xdoe"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
+}

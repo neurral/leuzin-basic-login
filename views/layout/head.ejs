@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% 
+      if (!title) {title = sails.config.application.title};
+    %>
+    
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/importer.css">
+    <!--STYLES END-->
+
+    <!--
+          Keep JS files at the footer as much as possible unless absolutely needed to execute before the page loads.
+    -->
+    <!--Preloaded SCRIPTS-->
+    
+    <!--Preloaded SCRIPTS END-->
+  <body>

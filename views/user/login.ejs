@@ -1,16 +1,26 @@
-  	<h1>Login</h1>
-  	<span class="bg-danger">
-  		<% if (req.session.flash && req.session.flash.error) { %>
-  		<%=req.flash('error')%><% } %>
-  	</span>
-  	<form action="/login" method="post">
-  		<label for="email">Your email address?</label>
-  		<input name="email" type="text"/>
-  		<br/>
+<% include ../layout/head %>
 
-  		<label for="password">Your safe word?</label>
-  		<input name="password" type="password"/>
-  		<br/>
 
-  		<input type="submit"/>
-  	</form>
+    <h1>Login</h1>
+
+    <% if (req.flash && req.flash.error) { %>
+    <div class="alert alert-danger">
+      <%= req.flash('error') %>
+    </div>
+    <% } %>
+
+    <form action="/login" method="post">
+      <label for="email">Email address: </label>
+      <input name="email" type="text"/>
+      <br/>
+
+      <label for="password">Password: </label>
+      <input name="password" type="password"/>
+      <br/>
+
+      <input type="submit" value="Login" />
+    </form>
+
+    <span>Not a user? </span> <a href="/signup">Sign up</a>
+
+<% include ../layout/footer %>

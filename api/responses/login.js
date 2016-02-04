@@ -30,6 +30,7 @@ module.exports = function login(inputs) {
         return res.badRequest('Invalid username/password combination.');
       }
       // Otherwise if this is an HTML-wanting browser, redirect to /login.
+      req.flash('error', 'Invalid login.');
       return res.redirect(inputs.invalidRedirect);
     }
 
